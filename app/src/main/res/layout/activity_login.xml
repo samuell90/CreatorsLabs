@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/nunito"
+            android:text="@string/application_name"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100sp"
+            android:fontFamily="@font/nunito"
+            android:text="where every creator dreams comes true"
+            android:textColor="@color/red2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/appname"
+            app:layout_constraintTop_toBottomOf="@id/appname" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bordered_rectangle"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40sp"
+            android:fontFamily="@font/nunito"
+            android:text="welcome back,"
+            android:textColor="@color/light_grey"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/round_et"
+            android:backgroundTint="@color/dark_grey"
+            android:padding="10sp">
+
+            <EditText
+                android:id="@+id/et_login_email"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/nunito"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/base_red"
+                android:textColorHint="@color/red2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/round_et"
+            android:backgroundTint="@color/dark_grey"
+            android:padding="10sp">
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/nunito"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="@color/base_red"
+                android:textColorHint="@color/red2" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tw_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text="@string/signup"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/light_grey"
+                app:layout_constraintHorizontal_bias=".65"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="125sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12.5sp"
+                android:background="@drawable/round_et"
+                android:backgroundTint="@color/et_login"
+                android:fontFamily="@font/nunito"
+                android:text="LOGIN"
+                android:textColor="@color/base_red"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

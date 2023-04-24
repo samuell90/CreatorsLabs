@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "543835587904",
+    "project_id": "testregisfirebase",
+    "storage_bucket": "testregisfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543835587904:android:3fb7df75f9539f71fe26a5",
+        "android_client_info": {
+          "package_name": "jennie.umn.ac.testregisfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543835587904-mme4sunp2g1n2dc9ur7l6ejcud60q7mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNEdNA9GL8RmILE4YE0u5whbU2P66So_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543835587904-mme4sunp2g1n2dc9ur7l6ejcud60q7mc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

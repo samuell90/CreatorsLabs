@@ -1,0 +1,2 @@
+rootProject.name = "TestRegisFireBase"
+include ':app'
